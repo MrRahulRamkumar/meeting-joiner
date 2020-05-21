@@ -1,0 +1,54 @@
+[
+    
+    {
+        "slot_name": "A1",
+        "meeting_type" : "microsoft_teams",
+        "course_name": "Network Programming",
+        "meeting_link": "https://teams.microsoft.com/l/team/19%3aa0b8539a6c734438b01ae5949a34d34a%40thread.tacv2/conversations?groupId=96a23073-4583-4007-96bb-5a2aa08622a3&tenantId=ff335ba2-bb68-489a-bbdd-f49ab4319838"
+    },
+    {
+        "slot_name": "C1",
+        "course_name": "Soft Skills",
+        "meeting_type": "browser",
+        "meeting_link": "https://global.gotowebinar.com/join/2976892954889719565/467303383"
+    },
+    {
+        "slot_name": "B2",
+        "course_name": "Network Security",
+        "meeting_type": "microsoft_teams",
+        "meeting_link": "https://teams.microsoft.com/l/team/19%3aa53d5da6fcc342a7b78184d31681030e%40thread.tacv2/conversations?groupId=0c1415d8-a303-4996-8738-09770a03271f&tenantId=ff335ba2-bb68-489a-bbdd-f49ab4319838"
+    },
+    {
+        "slot_name": "C2",
+        "course_name": "Soft Computing",
+        "meeting_type": "browser",
+        "meeting_link": "https://m.teamlink.co/3926878640"
+
+    },
+    {
+        "slot_name": "D1",
+        "course_name": "Cloud Computing",
+        "meeting_type": "browser",
+        "meeting_link": "https://m.teamlink.co/4256274617?p=vitapcc"
+
+    },
+    {
+        "slot_name": "F1+TF1",
+        "course_name": "Optimization Techniques",
+        "meeting_type": "browser",
+        "meeting_link": "https://m.teamlink.co/9188654307"
+
+    },
+    {
+        "slot_name": "G1+TG1",
+        "course_name": "Environmental Studies",
+        "meeting_type": "browser",
+        "meeting_link": "https://m.teamlink.co/6948711463"
+    },
+    {
+        "slot_name": "H1+TH1",
+        "course_name": "spanish",
+        "meeting_type": "microsoft_teams",
+        "meeting_link": "https://teams.microsoft.com/l/team/19%3aa6dfbdf26bb34834b843e2cbf71be638%40thread.tacv2/conversations?groupId=765bdebf-ed83-4702-be51-5c298efc3fdc&tenantId=ff335ba2-bb68-489a-bbdd-f49ab4319838"
+    }
+]

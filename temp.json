@@ -1,0 +1,92 @@
+{
+    "A1": [
+        {
+            "day": "tuesday",
+            "time": "09:00"
+        },
+        {
+            "day": "wednesday",
+            "time": "10:00"
+        },
+        {
+            "day": "thursday",
+            "time": "11:00"
+        }
+    ],
+    "B2": [
+        {
+            "day": "thursday",
+            "time": "14:00"
+        },
+        {
+            "day": "friday",
+            "time": "16:00"
+        },
+        {
+            "day": "sunday",
+            "time": "14:00"
+        }
+    ],
+    "C2": [
+        {
+            "day": "wednesday",
+            "time": "16:00"
+        },
+        {
+            "day": "thursday",
+            "time": "14:00"
+        },
+        {
+            "day": "friday",
+            "time": "15:00"
+        }
+    ],
+    "D1": [
+        {
+            "day": "tuesday",
+            "time": "12:00"
+        },
+        {
+            "day": "friday",
+            "time": "09:00"
+        },
+        {
+            "day": "sunday",
+            "time": "10:00"
+        }
+    ],
+    "F1+TF1": [
+        {
+            "day": "tuesday",
+            "time": "10:00"
+        },
+        {
+            "day": "thursday",
+            "time": "08:00"
+        },
+        {
+            "day": "friday",
+            "time": "12:00"
+        }
+    ],
+    "G1+TG1": [
+        {
+            "day": "friday",
+            "time": "08:00"
+        },
+        {
+            "day": "sunday",
+            "time": "12:00"
+        }
+    ],
+    "H1+TH1": [
+        {
+            "day": "tuesday",
+            "time": "11:00"
+        },
+        {
+            "day": "sunday",
+            "time": "08:00"
+        }
+    ]
+}
