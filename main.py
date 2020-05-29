@@ -17,6 +17,7 @@ options.add_experimental_option("prefs", { \
     "profile.default_content_setting_values.geolocation": 2,          # 1:allow, 2:block 
     "profile.default_content_setting_values.notifications": 2         # 1:allow, 2:block 
 })
+driver = webdriver.Chrome('./chromedriver', chrome_options=options)
 
 # Opening JSON file 
 f = open('slots.json')
@@ -25,8 +26,6 @@ h = open('secret.json')
 
 
 
-
-driver = webdriver.Chrome('./chromedriver', chrome_options=options)
 
 def login():
 
@@ -55,21 +54,37 @@ def start_meeting(meeting_link, meeting_type):
         
         driver.get(meeting_link)
 
-        driver.find_element_by_xpath('//*[@id="openTeamsClientInBrowser"]').click()
-        t.sleep(10)
-        driver.find_element_by_xpath('//*[@id="m1589448645693"]/calling-join-button/button').click()
         t.sleep(2)
+
+        try:
+            driver.find_element_by_xpath('//*[@id="openTeamsClientInBrowser"]').click()
+        except:
+            pass            
+
+
+        join_meeting_button = None
+        while join_meeting_button is None:
+            try:                                                    
+                join_meeting_button = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div[1]/middle-messages-stripe/div/messages-header/div[2]/div/message-pane/div/div[1]/div/div/message-list/div/virtual-repeat/div/div[8]/div/thread/div/div[2]/calling-thread-header/div/calling-join-button/button') 
+            except:
+                print('wating for meeting to start...')
+                t.sleep(2)
+                pass    
+        join_meeting_button.click()
+        t.sleep(5)
 
         video_toggle = driver.find_element_by_xpath('//*[@id="page-content-wrapper"]/div[1]/div/calling-pre-join-screen/div/div/div[2]/div[1]/div[2]/div/div/section/div[2]/toggle-button[1]/div/button/span[1]')
         mic_toggle = driver.find_element_by_xpath('//*[@id="preJoinAudioButton"]/div/button/span[1]')
 
         if video_toggle.get_attribute('title') == 'Turn camera off':
             video_toggle.click()
-        if mic_toggle.get_attribute('title'):  
+        if mic_toggle.get_attribute('title') == 'Mute microphone':  
             mic_toggle.click()
         
         t.sleep(2)
         driver.find_element_by_xpath('//*[@id="page-content-wrapper"]/div[1]/div/calling-pre-join-screen/div/div/div[2]/div[1]/div[2]/div/div/section/div[1]/div/div/button').click()
+             
+        
     else:
         print('Invalid Option')    
     return schedule.CancelJob    
@@ -127,16 +142,16 @@ def main():
             if day == required_day:
                 print("Scheduling {} at slot {} on {} at {}. Meeting type is {}".format(course_name, slot_name, day, time, meeting_type))
                 schedule.every().day.at(time).do(start_meeting, meeting_link=meeting_link, meeting_type=meeting_type)
-            
+
+    login()
     while True: 
         # Checks whether a scheduled task  
         # is pending to run or not 
         schedule.run_pending() 
-        t.sleep(58) 		
+        t.sleep(30) 		
         
     # Closing file 
     f.close() 
 
 if __name__ == "__main__":
-    login()
     main()

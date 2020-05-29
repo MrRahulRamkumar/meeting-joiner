@@ -10,7 +10,7 @@
         "slot_name": "C1",
         "course_name": "Soft Skills",
         "meeting_type": "browser",
-        "meeting_link": "https://global.gotowebinar.com/join/2976892954889719565/467303383"
+        "meeting_link": "https://global.gotowebinar.com/join/6944684073549604364/346422608"
     },
     {
         "slot_name": "B2",
@@ -50,5 +50,11 @@
         "course_name": "spanish",
         "meeting_type": "microsoft_teams",
         "meeting_link": "https://teams.microsoft.com/l/team/19%3aa6dfbdf26bb34834b843e2cbf71be638%40thread.tacv2/conversations?groupId=765bdebf-ed83-4702-be51-5c298efc3fdc&tenantId=ff335ba2-bb68-489a-bbdd-f49ab4319838"
+    },
+    {
+        "slot_name": "EXTRA",
+        "course_name": "TCS Training",
+        "meeting_type": "microsoft_teams",
+        "meeting_link": "https://teams.microsoft.com/_#/school/conversations/25-30%20May?threadId=19:da20055e6be4410fa2bc51a0b2b2a053@thread.tacv2&ctx=channel"
     }
 ]

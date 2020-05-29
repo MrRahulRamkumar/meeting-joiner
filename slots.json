@@ -16,7 +16,7 @@
     "B2": [
         {
             "day": "thursday",
-            "time": "15:00"
+            "time": "15:09"
         },
         {
             "day": "friday",
@@ -102,5 +102,36 @@
             "day": "saturday",
             "time": "08:00"
         }
+    ],
+    "EXTRA" : [
+        {
+            "day": "monday",
+            "time": "19:15"
+        },
+        {
+            "day": "tuesday",
+            "time": "19:15"
+        },
+        {
+            "day": "wednesday",
+            "time": "19:15"
+        },
+        {
+            "day": "thursday",
+            "time": "19:15"
+        },
+        {
+            "day": "friday",
+            "time": "19:15"
+        },
+        {
+            "day": "saturday",
+            "time": "19:15"
+        },
+        {
+            "day": "sunday",
+            "time": "19:15"
+        }
+        
     ]
 }
